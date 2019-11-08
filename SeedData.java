@@ -15,8 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Transactional
 @Component
-public class SeedData implements CommandLineRunner
-{
+public class SeedData implements CommandLineRunner {
     @Autowired
     private CustomersRepository custrepos;
 
@@ -30,8 +29,7 @@ public class SeedData implements CommandLineRunner
     private PaymentRepository paymentrepos;
 
     @Override
-    public void run(String[] args) throws Exception
-    {
+    public void run(String[] args) throws Exception {
         Payment pay1 = new Payment("Cash");
         Payment pay2 = new Payment("Gift Card");
         Payment pay3 = new Payment("Credit Card");
